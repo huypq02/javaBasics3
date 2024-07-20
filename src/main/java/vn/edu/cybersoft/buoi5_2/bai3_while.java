@@ -9,14 +9,14 @@ public class bai3_while {
         try {
             // co bao nhieu so chia het cho 3 tu 0 den 1000?
             //
-            System.out.printf("Result is %d\n", totalNumberIsDivisible(MAX_NUM));
+            System.out.printf("Result is %d\n", numberOfNumbersIsDivisible(MAX_NUM));
 
         } catch (Exception e){
             System.out.println("Something went wrong!");
         }
     }
 
-    private static int totalNumberIsDivisible(int n){
+    private static int numberOfNumbersIsDivisible(int n){
         int sum = 0;
         int i = 0;
         while (i <= n){
