@@ -12,4 +12,8 @@ public class utils {
     public static boolean isDivisible(int divisor, int dividend){
         return divisor%dividend == 0;
     }
+
+    public static double convertDayToYear(double day){
+        return day/365;
+    }
 }

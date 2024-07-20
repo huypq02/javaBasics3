@@ -1,5 +1,7 @@
 package vn.edu.cybersoft.buoi5;
 
+import vn.edu.cybersoft.pkg.utils;
+
 import java.util.Scanner;
 
 import static vn.edu.cybersoft.buoi5.validator.bai5.*;
@@ -31,7 +33,9 @@ public class bai5 {
 
             // thoi gian du tien mua o to (timeTarget)
             System.out.println("Du kien so ngay it nhat ma ban phai doi ke tu thoi diem hien tai la");
-            System.out.println(savingsCalculator(deposit, expectedSaving, interestRate) + " ngay");
+            double expectedDay = savingsCalculator(deposit, expectedSaving, interestRate);
+            System.out.println(expectedDay + " ngay");
+            System.out.println("~ " + utils.convertDayToYear(expectedDay) + " nam");
         } catch (Exception e){
             System.out.println("Something wrong!");
         }
