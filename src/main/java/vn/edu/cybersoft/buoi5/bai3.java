@@ -14,10 +14,10 @@ public class bai3 {
             }
         }
 
-        System.out.println("Tong cac so le nguyen duong nho hon n la " + sumOddNum(n));
+        System.out.println("Tong cac so le nguyen duong nho hon n la " + sumOddNumLessThanN(n));
     }
 
-    private static int sumOddNum(double n){
+    private static int sumOddNumLessThanN(double n){
         int sum = 0;
         for (int i = 0; true; i++){
             if (i%2 != 0) sum += i;
