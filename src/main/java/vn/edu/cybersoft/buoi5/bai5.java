@@ -2,6 +2,8 @@ package vn.edu.cybersoft.buoi5;
 
 import java.util.Scanner;
 
+import static vn.edu.cybersoft.buoi5.validator.bai5.*;
+
 public class bai5 {
     public static void main(String[] args) {
         try {
@@ -9,13 +11,23 @@ public class bai5 {
             // so tien anh X gui (fund)
             System.out.println("Nhap so tien gui (VND):");
             int deposit = sc.nextInt();
+            if (!validatorDeposit(deposit)){
+                return;
+            }
+
             // so tien mong muon tuong lai (expectedFund)
             System.out.println("Nhap so tien mong muon co trong tuong lai (VND):");
             int expectedSaving = sc.nextInt();
+            if (!validatorExpectedSaving(deposit, expectedSaving)){
+                return;
+            }
 
             // tien lai tiet kiem (interestSaving)
             System.out.println("Nhap tien lai tiet kiem (%/year)");
             double interestRate = sc.nextDouble();
+            if (!validatorInterestRate((int)interestRate)){
+                return;
+            }
 
             // thoi gian du tien mua o to (timeTarget)
             System.out.println("Du kien so ngay it nhat ma ban phai doi ke tu thoi diem hien tai la");
