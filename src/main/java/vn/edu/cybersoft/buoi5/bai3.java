@@ -10,7 +10,7 @@ public class bai3 {
         while (n <= 0){
             n = sc.nextDouble();
             if (n <= 0) {
-                System.out.println("Nhap lai n");
+                System.out.println("Nhap lai n!");
             }
         }
 

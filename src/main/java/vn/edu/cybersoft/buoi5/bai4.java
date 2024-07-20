@@ -9,7 +9,7 @@ public class bai4 {
         try {
             // S(n) = x + x^2 + x^3 + ... + x^n => n la so nguyen duong > 0
             Scanner sc = new Scanner(System.in);
-            System.out.println("Nhap n so nguyen duong de thoa de bai");
+            System.out.println("Nhap n so nguyen duong de thoa de bai S(n) = x + x^2 + x^3 + ... + x^n");
             int n = sc.nextInt();
             if (!utils.isPositive(n)){
                 System.out.println("n should be positive");
